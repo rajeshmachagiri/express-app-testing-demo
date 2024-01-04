@@ -2,8 +2,9 @@
 jobs:
 - name: job
   public: true
+
   plan:
-  - task: Deploy
+  - task: new-pipelione
     config:
       platform: linux
       image_resource:
@@ -11,4 +12,4 @@ jobs:
         source: { repository: busybox }
       run:
         path: echo
-        args: ["The Application is Deployed"]
+        args: ["This is the new pipeline"]
